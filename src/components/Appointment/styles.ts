@@ -24,7 +24,8 @@ export const styles = StyleSheet.create({
     category: {
         fontFamily: theme.fonts.text400,
         color: theme.colors.highlight,
-        fontSize: 13
+        fontSize: 13,
+        marginRight: 24
     },
     footer: {
         width: '100%',
@@ -51,4 +52,12 @@ export const styles = StyleSheet.create({
         marginLeft: 7,
         marginRight: 24
     },
+    guildIconContainer: {
+        height: 68,
+        width: 64,
+        borderRadius: 8,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginRight: 20
+    }
 });
