@@ -70,8 +70,8 @@ function AuthProvider({ children }: AuthProviderProps) {
     }
 
     async function signOut() {
-        setUser({} as User);
         await AsyncStorage.removeItem(COLLECTION_USER);
+        setUser({} as User);
     }
 
     function setToken(token: string) {

@@ -5,10 +5,13 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         height: 56,
-        backgroundColor: theme.colors.primary,
+        backgroundColor: 'transparent',
         borderRadius: 8,
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+        borderColor: theme.colors.secondary30,
+        borderWidth: 1,
+        marginRight: 10
     },
     title: {
         flex: 1,

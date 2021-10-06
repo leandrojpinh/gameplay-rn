@@ -40,11 +40,6 @@ export function AppointmentDetails() {
 
     async function fetchGuildWidget() {
         try {
-            console.log('', {
-                token: api.defaults.headers.authorization,
-                base: api.defaults.baseURL,
-                url: `/guilds/${guildSelected.guild.id}/widget.json`
-            });
             const response = await api.get(`/guilds/${guildSelected.guild.id}/widget.json`);
             
             setWidget(response.data);
